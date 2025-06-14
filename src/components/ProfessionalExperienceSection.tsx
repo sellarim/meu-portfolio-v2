@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 const experiences = [
   {
     company: "Digi",
-    logo: "https://media.licdn.com/dms/image/C4D0BAQFJLTgMyZHiOQ/company-logo_200_200/0/1630608907209/digitechs_logo?e=2147483647&v=beta&t=05arwDnOv4VAPvCaf5nX3U_MZc-gHbp_keE-fN3PeB4",
+    logo: "/lovable-uploads/2cd4df9d-0fbb-497f-8250-5335892f5cb0.png",
     location: "São Paulo, Brasil",
     roles: [
       {
