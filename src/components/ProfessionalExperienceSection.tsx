@@ -132,7 +132,7 @@ const experiences = [
   },
   {
     company: "Artes em PVC",
-    logo: "https://media.licdn.com/dms/image/C4E0BAQH1mB3_2gtnKQ/company-logo_200_200/0/1519862376166/artesempvc_logo?e=1722470400&v=beta&t=QML1zTkdmGA_q-a_EG9PSLh7dMBwvdg1i8dtF3_k9RA",
+    logo: "/lovable-uploads/976429c8-109c-4f3b-b9c6-53301df30462.png",
     location: "Brasil",
     roles: [
       {
