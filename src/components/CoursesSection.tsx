@@ -5,37 +5,37 @@ const courses = [
   {
     title: "Compliance e proteção de dados",
     institution: "PUCRS",
-    logo: "/lovable-uploads/0af3a170-d588-498f-823b-f86f7f6e47ad.png",
+    logo: "/lovable-uploads/0f5f5f7f-eff1-445b-ba8f-07ad2e4600ee.png",
     period: "abr. 2025"
   },
   {
     title: "Banco de dados",
     institution: "Ada",
-    logo: "/lovable-uploads/2dbaf2ae-ca87-4911-bb11-cda69f853534.png",
+    logo: "/lovable-uploads/00d4c0b5-b80c-479a-ab59-e0cb1501ec21.png",
     period: "jan. 2025"
   },
   {
     title: "Data Visualization with Python",
     institution: "IBM",
-    logo: "/lovable-uploads/010edcaa-2527-4993-b797-913c4c8a0d1d.png",
+    logo: "/lovable-uploads/ab00bd1b-9e09-4941-92f8-eb1fdf7ef1ea.png",
     period: "nov. 2024"
   },
   {
     title: "Inteligência Artificial - Google Cloud",
     institution: "FUNDAÇÃO FAT",
-    logo: "/lovable-uploads/2cc2f069-3eca-440c-8f38-522396550297.png",
+    logo: "/lovable-uploads/bbf299cd-fa54-45c3-83b7-cb2cff58f2c6.png",
     period: "out. 2024"
   },
   {
     title: "Prompt Engineering Foundation Professional Certification - CPEFPC™",
     institution: "Certiprof",
-    logo: "/lovable-uploads/18fb1a98-af23-40f3-bc7a-53ff2300a980.png",
+    logo: "/lovable-uploads/d9b96349-829f-498e-bf68-4d30c113ac6b.png",
     period: "out. 2024"
   },
   {
     title: "Cloud Essentials - Knowledge Badge",
     institution: "Amazon Web Services (AWS)",
-    logo: "/lovable-uploads/b8ad9a39-4e1e-4734-9590-3568a339d551.png",
+    logo: "/lovable-uploads/674841c1-7313-4269-ba9c-0e25deafd0bb.png",
     period: "set. 2024"
   }
 ];
