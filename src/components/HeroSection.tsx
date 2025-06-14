@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
-const WhatsappIcon = icons.whatsapp;
+const WhatsappIcon = icons.Whatsapp;
 
 const stack = [
   { name: "Power BI", icon: <BarChart3 className="text-yellow-500" /> },

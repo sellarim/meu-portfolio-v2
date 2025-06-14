@@ -5,7 +5,7 @@ import { toast } from "@/components/ui/use-toast";
 import { Linkedin, Github, Instagram, Youtube, Mail } from "lucide-react";
 import { icons } from "lucide-react"; // Import icons object for dynamic icons
 
-const WhatsappIcon = icons.whatsapp;
+const WhatsappIcon = icons.Whatsapp;
 
 const links = [
   { href: "https://www.linkedin.com/in/leo-miralles/", icon: <Linkedin /> },
