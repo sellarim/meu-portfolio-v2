@@ -1,3 +1,4 @@
+
 import { useCallback } from "react";
 import { Github, Linkedin, Instagram, Youtube, BarChart3, Database, Code, Layers, Sun, Moon, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -101,7 +102,7 @@ export default function HeroSection() {
       </Button>
       {/* Modo claro/escuro */}
       <button
-        className={cn("absolute top-5 right-7 md:right-16 bg-muted rounded-full p-2 transition-colors shadow focus:outline-none")}
+        className={cn("fixed top-5 right-7 md:right-16 bg-muted rounded-full p-2 transition-colors shadow z-40 focus:outline-none")}
         aria-label="Alternar tema"
         onClick={() => setDark(v => !v)}
         type="button"
