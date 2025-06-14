@@ -26,11 +26,12 @@ export default function HeroSection() {
   return (
     <header className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 px-6 md:px-16 py-16 relative">
       {/* Foto estilo hero atualizada */}
-      <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg mb-4 md:mb-0 bg-muted flex-shrink-0">
+      <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg mb-4 md:mb-0 bg-muted flex-shrink-0 flex items-center justify-center">
         <img
           src="/lovable-uploads/eb71bb88-ae92-450a-b169-31a53dd57e34.png"
           alt="Foto de perfil"
-          className="object-cover object-center w-full h-full"
+          className="object-cover object-[center_58%] w-full h-full scale-125"
+          style={{}}
         />
       </div>
       {/* Textos da hero */}
