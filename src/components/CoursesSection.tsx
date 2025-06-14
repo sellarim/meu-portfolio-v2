@@ -53,6 +53,7 @@ export default function CoursesSection() {
       className="w-full py-20 px-6 md:px-16 bg-background"
     >
       <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
+        <span role="img" aria-label="Gráfico" className="mr-2">📊</span>
         Principais cursos e certificações:
       </h2>
       <div className="flex flex-col md:flex-row md:flex-wrap gap-8 max-w-5xl mx-auto">
@@ -93,4 +94,3 @@ export default function CoursesSection() {
     </section>
   );
 }
-
