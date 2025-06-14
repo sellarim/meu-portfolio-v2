@@ -1,25 +1,25 @@
 
-const experiences = [
+const educations = [
   {
-    title: "Analista de Dados",
-    company: "Empresa Exemplo",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png",
-    period: "2022 - Atual",
-    desc: "Modelagem de dados, construção de dashboards, integração de sistemas e processos analíticos para tomada de decisão.",
+    title: "Curso Superior de Tecnologia (CST), Ciência de dados",
+    institution: "UNINTER Centro Universitário Internacional",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_UNINTER.png/1200px-Logo_UNINTER.png",
+    period: "ago de 2024 - ago de 2026",
+    desc: "",
   },
   {
-    title: "Certificação - Microsoft Power BI",
-    company: "Microsoft",
-    logo: "https://img.icons8.com/color/48/000000/microsoft.png",
-    period: "2023",
-    desc: "Certificado oficial em Power BI e relatórios interativos.",
+    title: "Técnico em Administração",
+    institution: "ETEC - Escola Técnica Estadual de São Paulo",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Logo_etec_saopaulo.png",
+    period: "2019 - 2020",
+    desc: "Curso técnico em Administração",
   },
   {
-    title: "Curso - Python para Dados",
-    company: "DataCamp",
-    logo: "https://seeklogo.com/images/D/datacamp-logo-241640C0C8-seeklogo.com.png",
-    period: "2022",
-    desc: "Curso intensivo de Python voltado para análise e tratamento de dados.",
+    title: "Técnico em Informática",
+    institution: "ETEC - Escola Técnica Estadual de São Paulo",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Logo_etec_saopaulo.png",
+    period: "2011 - 2012",
+    desc: "Curso técnico em Informática, Tecnologia da Informação",
   },
 ];
 
@@ -29,16 +29,16 @@ export default function ExperienceSection() {
       id="experience"
       className="w-full py-20 px-6 md:px-16 bg-muted/70"
     >
-      <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">📚 Experiência & Formação</h2>
-      <div className="flex flex-col md:flex-row gap-8 max-w-5xl mx-auto">
-        {experiences.map(({ title, company, logo, period, desc }) => (
-          <div key={title + company} className="flex gap-4 items-start bg-background rounded-xl shadow px-6 py-5 flex-1">
-            <img src={logo} alt={company} className="w-12 h-12 object-contain rounded-md bg-white border p-1" />
+      <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">🎓 Formação Acadêmica</h2>
+      <div className="flex flex-col gap-6 max-w-3xl mx-auto">
+        {educations.map(({ title, institution, logo, period, desc }) => (
+          <div key={title + institution} className="flex gap-4 items-start bg-background rounded-xl shadow px-6 py-5">
+            <img src={logo} alt={institution} className="w-12 h-12 object-contain rounded-md bg-white border p-1" />
             <div>
-              <h3 className="font-bold text-base">{title}</h3>
-              <span className="text-sm text-muted-foreground font-medium">{company}</span>
-              <span className="ml-2 text-xs text-muted-foreground">{period}</span>
-              <p className="text-sm mt-2 text-foreground">{desc}</p>
+              <h3 className="font-bold text-base">{institution}</h3>
+              <div className="text-sm text-muted-foreground font-medium">{title}</div>
+              <span className="text-xs text-muted-foreground block mt-1">{period}</span>
+              {desc && <p className="text-sm mt-2 text-foreground">{desc}</p>}
             </div>
           </div>
         ))}
