@@ -70,7 +70,12 @@ export default function ProjectsSection() {
               <img
                 src={proj.cover}
                 alt={proj.title}
-                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300"
+                className={
+                  "w-full h-full transition-transform duration-300 " +
+                  (proj.title === "📺 Dashboard – Mídia"
+                    ? "object-contain bg-black"
+                    : "object-cover group-hover:scale-110")
+                }
               />
             </div>
             <CardContent className="py-4 px-5 flex flex-col gap-2">
