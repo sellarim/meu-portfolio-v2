@@ -30,7 +30,7 @@ export default function HeroSection() {
       {/* Foto estilo hero atualizada */}
       <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg mb-4 md:mb-0 bg-muted flex-shrink-0 flex items-center justify-center">
         <img
-          src="/lovable-uploads/743eb77e-94d8-49b7-aa9a-56f32b4cb6a4.png"
+          src="/lovable-uploads/cebcd6b7-d72d-4b85-b2b3-6bde905d945f.png"
           alt="Foto de perfil"
           className="object-cover w-full h-full"
           style={{
