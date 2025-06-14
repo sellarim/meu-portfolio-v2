@@ -1,9 +1,9 @@
-
 import { useCallback } from "react";
 import { Github, Linkedin, Instagram, Youtube, BarChart3, Database, Code, Layers, Sun, Moon, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import { useRef } from "react";
 
 const WhatsappIcon = MessageCircle;
 
@@ -16,10 +16,15 @@ const stack = [
 
 export default function HeroSection() {
   const [dark, setDark] = useState(() => window.matchMedia?.('(prefers-color-scheme: dark)').matches);
+  const [eightBitMode, setEightBitMode] = useState(false);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
   }, [dark]);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("eightbit", eightBitMode);
+  }, [eightBitMode]);
 
   const scrollToProjects = useCallback(() => {
     const section = document.getElementById("projects");
@@ -27,21 +32,13 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <header
-      className="
-        flex flex-col items-center justify-center
-        gap-6 md:gap-8
-        px-6 md:px-16 py-16
-        relative w-full mx-auto
-        text-center
-        "
-    >
+    <header className="flex flex-col items-center justify-center gap-6 md:gap-8 px-6 md:px-16 py-16 relative w-full mx-auto text-center">
       {/* Foto estilo hero atualizada */}
-      <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg bg-muted flex-shrink-0 flex items-center justify-center mt-0 mb-3">
+      <div className={`w-36 h-36 md:w-48 md:h-48 ${eightBitMode ? "profile-pic" : ""} rounded-full overflow-hidden border-4 border-primary shadow-lg bg-muted flex-shrink-0 flex items-center justify-center mt-0 mb-3`}>
         <img
           src="lovable-uploads/cebcd6b7-d72d-4b85-b2b3-6bde905d945f.png"
           alt="Foto de perfil"
-          className="object-cover w-full h-full"
+          className={`object-cover w-full h-full ${eightBitMode ? "profile-pic" : ""}`}
           style={{
             objectPosition: "center 56%",
             transform: "scale(1.00)"
@@ -62,7 +59,7 @@ export default function HeroSection() {
           {stack.map((tech) => (
             <span
               key={tech.name}
-              className="flex items-center gap-1 px-3 py-1 rounded bg-muted text-sm font-semibold shadow hover:scale-105 transition-transform"
+              className={`flex items-center gap-1 px-3 py-1 rounded bg-muted text-sm font-semibold shadow hover:scale-105 transition-transform ${eightBitMode ? "eightbit-border" : ""}`}
             >
               {tech.icon} {tech.name}
             </span>
@@ -106,8 +103,25 @@ export default function HeroSection() {
         aria-label="Alternar tema"
         onClick={() => setDark(v => !v)}
         type="button"
+        style={{ marginLeft: 48 }}
       >
         {dark ? <Sun className="text-yellow-400" /> : <Moon className="text-gray-700" />}
+      </button>
+      {/* Toggle do modo 8 bits */}
+      <button
+        className={cn("fixed top-5 right-20 md:right-36 bg-yellow-300 border-4 border-yellow-700 shadow-lg rounded-none p-2 z-40 focus:outline-none flex items-center gap-2", eightBitMode && "ring-4 ring-pink-500")}
+        aria-label="Alternar modo 8 bits"
+        onClick={() => setEightBitMode(e => !e)}
+        type="button"
+        title="Ativar/desativar modo 8 bits"
+        style={{
+          fontFamily: "'Press Start 2P', monospace",
+          fontSize: 11,
+          textShadow: eightBitMode ? "2px 2px #ffb300" : "none"
+        }}
+      >
+        <span style={{fontSize: 16, marginRight: 4}}>🕹️</span>
+        {eightBitMode ? "8 bits ON" : "8 bits"}
       </button>
     </header>
   );
