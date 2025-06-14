@@ -69,7 +69,7 @@ const experiences = [
   },
   {
     company: "Samsung Brasil",
-    logo: "https://media.licdn.com/dms/image/C4D0BAQFUBQTT3V9sfg/company-logo_200_200/0/1630515594464/samsung_logo?e=1722470400&v=beta&t=yjl0btBNjFteZYh21Ml9UkmFQswesnjih_VksDMbp8Y",
+    logo: "/lovable-uploads/d55c2d40-4531-4a55-9002-fe301cb33652.png",
     location: "São Paulo, Brasil",
     roles: [
       {
