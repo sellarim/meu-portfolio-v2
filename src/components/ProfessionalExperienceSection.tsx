@@ -165,7 +165,7 @@ const experiences = [
   },
   {
     company: "Unitono Brasil",
-    logo: "https://media.licdn.com/dms/image/C4D0BAQGKXMyy41mGVA/company-logo_200_200/0/1519891086209?e=1722470400&v=beta&t=o5nCsq56T4F0FI_NoAoqP8BKh2NVWhBJGVkEfKnX8tw",
+    logo: "/lovable-uploads/6ff84aff-ce19-4036-b289-f7b89f05d4b0.png",
     location: "São Bernardo do Campo",
     roles: [
       {
