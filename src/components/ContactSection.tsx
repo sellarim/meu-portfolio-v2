@@ -1,16 +1,16 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
 import { Linkedin, Github, Instagram, Youtube, Mail } from "lucide-react";
 
+// Atualizado o link do email para o novo endereço
 const links = [
   { href: "https://www.linkedin.com/in/leo-miralles/", icon: <Linkedin /> },
   { href: "https://github.com/sellarim", icon: <Github /> },
   { href: "https://www.instagram.com/leonardomiralless/", icon: <Instagram /> },
   { href: "https://www.youtube.com/@leonardo-miralles", icon: <Youtube /> },
-  { href: "mailto:seuemail@email.com", icon: <Mail /> },
+  { href: "mailto:leonardomiralles@hotmail.com", icon: <Mail /> },
 ];
 
 export default function ContactSection() {
@@ -34,6 +34,15 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 px-6 md:px-16 bg-background">
       <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">📞 Contato</h2>
+      {/* E-mail exposto */}
+      <div className="flex justify-center mb-4">
+        <a
+          href="mailto:leonardomiralles@hotmail.com"
+          className="text-primary text-lg font-semibold hover:underline"
+        >
+          leonardomiralles@hotmail.com
+        </a>
+      </div>
       <form className="w-full max-w-lg mx-auto flex flex-col gap-4 bg-muted rounded-xl shadow p-8" onSubmit={handleSubmit}>
         <input
           className="bg-background border border-border px-4 py-2 rounded outline-none focus:ring-2 focus:ring-primary transition"
@@ -77,4 +86,3 @@ export default function ContactSection() {
     </section>
   );
 }
-
