@@ -149,7 +149,7 @@ const experiences = [
   },
   {
     company: "Autônomo",
-    logo: "https://cdn-icons-png.flaticon.com/512/2991/2991073.png",
+    logo: "/lovable-uploads/57dac62d-461a-4cb3-a3bd-50feb1826176.png",
     location: "Brasil",
     roles: [
       {
