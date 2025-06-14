@@ -1,9 +1,12 @@
+
 import { useCallback } from "react";
 import { Github, Linkedin, Instagram, Youtube, BarChart3, Database, Code, Layers, Sun, Moon } from "lucide-react";
-import { Icon } from "lucide-react"; // Import Icon for dynamic icons
+import { icons } from "lucide-react"; // Import icons object for dynamic icons
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+
+const WhatsappIcon = icons.whatsapp;
 
 const stack = [
   { name: "Power BI", icon: <BarChart3 className="text-yellow-500" /> },
@@ -75,7 +78,7 @@ export default function HeroSection() {
             <Button variant="ghost" size="icon"><Youtube /></Button>
           </a>
           <a href="https://api.whatsapp.com/send?phone=5511945720468" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <Button variant="ghost" size="icon"><Icon name="whatsapp" /></Button>
+            <Button variant="ghost" size="icon">{WhatsappIcon && <WhatsappIcon />}</Button>
           </a>
         </div>
       </div>
