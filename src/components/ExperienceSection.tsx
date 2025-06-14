@@ -1,4 +1,3 @@
-
 const educations = [
   {
     title: "Curso Superior de Tecnologia (CST), Ciência de dados",
@@ -10,14 +9,14 @@ const educations = [
   {
     title: "Técnico em Administração",
     institution: "ETEC - Escola Técnica Estadual de São Paulo",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Logo_etec_saopaulo.png",
+    logo: "/lovable-uploads/071e1939-f539-4bc9-b721-470a33f352fc.png",
     period: "2019 - 2020",
     desc: "Curso técnico em Administração",
   },
   {
     title: "Técnico em Informática",
     institution: "ETEC - Escola Técnica Estadual de São Paulo",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Logo_etec_saopaulo.png",
+    logo: "/lovable-uploads/071e1939-f539-4bc9-b721-470a33f352fc.png",
     period: "2011 - 2012",
     desc: "Curso técnico em Informática, Tecnologia da Informação",
   },
@@ -46,4 +45,3 @@ export default function ExperienceSection() {
     </section>
   );
 }
-
