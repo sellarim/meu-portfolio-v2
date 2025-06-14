@@ -27,6 +27,22 @@ const projects = [
     github: "https://github.com/",
     ext: "",
   },
+  {
+    title: "Gestão de Indicadores em Excel",
+    cover: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400",
+    desc: "Planilha avançada com automações VBA e dashboards interativos para acompanhamento de KPIs.",
+    tags: ["Excel", "VBA", "Dashboard"],
+    github: "https://github.com/",
+    ext: "",
+  },
+  {
+    title: "Automação de Relatórios PowerPoint",
+    cover: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400",
+    desc: "Geração automática de relatórios visuais no PowerPoint a partir de dados do Power BI.",
+    tags: ["PowerPoint", "Automação"],
+    github: "https://github.com/",
+    ext: "",
+  },
 ];
 
 export default function ProjectsSection() {
@@ -72,3 +88,4 @@ export default function ProjectsSection() {
     </section>
   );
 }
+
