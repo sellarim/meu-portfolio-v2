@@ -33,12 +33,12 @@ export default function HeroSection() {
       <div className="flex-1 flex flex-col gap-4 items-center md:items-start">
         <span className="text-muted-foreground text-sm md:text-base mb-1">Olá! Eu sou</span>
         <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2 font-sans">Leonardo Miralles</h1>
-        <p className="text-lg md:text-xl text-foreground max-w-xl text-center md:text-left">
-          Analista de BI com +6 anos de experiência, especialista em transformar dados em decisões estratégicas.<br />
-          Formação em Ciência de Dados, com base técnica em Informática e Administração.<br />
-          Expertise em integração de dados, automações com VBA/SQL e criação de dashboards interativos no Power BI.<br />
-          Atualmente sou o Analista de BI mais seguido do Linkedin BR.
-        </p>
+        <ul className="list-disc pl-5 space-y-1 text-lg md:text-xl text-foreground max-w-xl text-center md:text-left">
+          <li>Analista de BI com +6 anos de experiência, especialista em transformar dados em decisões estratégicas.</li>
+          <li>Formação em Ciência de Dados, com base técnica em Informática e Administração.</li>
+          <li>Expertise em integração de dados, automações com VBA/SQL e criação de dashboards interativos no Power BI.</li>
+          <li>Atualmente sou o Analista de BI mais seguido do Linkedin BR.</li>
+        </ul>
         <div className="flex gap-3 items-center flex-wrap mt-3">
           {stack.map((tech) => (
             <span
