@@ -70,6 +70,10 @@ Simply open [Lovable](https://lovable.dev/projects/0cc88d72-085d-4995-9237-3e1f6
 2. Push the contents of the `dist` directory to a `gh-pages` branch.
 3. In the repository settings, set GitHub Pages to deploy from that branch.
 
+All image references use relative paths so they resolve correctly under the
+`/meu-portfolio-v2/` base path. If you move the project to a different
+repository name, update the `base` option in `vite.config.ts` accordingly.
+
 The Vite configuration uses `/meu-portfolio-v2/` as the production `base` path. If you rename the repository, update the `base` value in `vite.config.ts` accordingly.
 
 ## Can I connect a custom domain to my Lovable project?

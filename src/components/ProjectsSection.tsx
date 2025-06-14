@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const projects = [
   {
     title: "🏙️ Casas Noturnas",
-    cover: "/lovable-uploads/cdd2d155-ef17-44e9-8805-e32bd412aa53.png",
+    cover: "lovable-uploads/cdd2d155-ef17-44e9-8805-e32bd412aa53.png",
     desc: "Dashboard para gestão de eventos com análise de vendas, público e comandas.",
     tags: ["Power BI", "Firebase", "SQL", "Excel"],
     github: "",
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: "💰 MoneyMoney",
-    cover: "/lovable-uploads/841cb689-76f1-441f-893f-1a3371336b54.png",
+    cover: "lovable-uploads/841cb689-76f1-441f-893f-1a3371336b54.png",
     desc: "Painel financeiro pessoal com consolidação de gastos, metas e patrimônio.",
     tags: ["Power BI", "Excel"],
     github: "",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "🎧 Monitoria – Call Center",
-    cover: "/lovable-uploads/5b10e6e9-8b84-40ed-b100-dab710c70c12.png",
+    cover: "lovable-uploads/5b10e6e9-8b84-40ed-b100-dab710c70c12.png",
     desc: "Dashboard de qualidade em atendimento, com indicadores por operador e motivos de falha.",
     tags: ["Power BI", "Excel"],
     github: "",
@@ -28,7 +28,7 @@ const projects = [
   },
   {
     title: "📺 Dashboard – Mídia",
-    cover: "/lovable-uploads/f3b49063-97e9-49b2-a706-ef197223b87a.png",
+    cover: "lovable-uploads/f3b49063-97e9-49b2-a706-ef197223b87a.png",
     desc: "Visualização de KPIs de campanhas digitais integrando múltiplas fontes de dados.",
     tags: ["Power BI", "SQL", "Google Sheets", "Supermetrics"],
     github: "",
@@ -36,7 +36,7 @@ const projects = [
   },
   {
     title: "🛒 Vendas – SPAR",
-    cover: "/lovable-uploads/9dcf39a6-6117-4a5a-a21c-96eabbdb843c.png",
+    cover: "lovable-uploads/9dcf39a6-6117-4a5a-a21c-96eabbdb843c.png",
     desc: "Acompanhamento de vendas por loja, produto e região com análise de metas e desempenho.",
     tags: ["Power BI", "Excel", "SQL"],
     github: "",
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: "⚙️ Automação – VBA: Otimização de Processos no Excel",
-    cover: "/lovable-uploads/8b4274ad-58ad-4e16-9e58-dcf88f7206c4.png",
+    cover: "lovable-uploads/8b4274ad-58ad-4e16-9e58-dcf88f7206c4.png",
     desc: "Automatização de um processo diário com múltiplos PROCVs, formatações e inserções manuais que antes levava 1 hora e passou a ser executado em apenas 15 minutos com dois botões.",
     tags: ["Excel", "VBA (macros personalizadas)"],
     github: "",
