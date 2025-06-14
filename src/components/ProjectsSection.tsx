@@ -4,52 +4,44 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const projects = [
   {
-    title: "Dashboard de Vendas BI",
-    cover: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
-    desc: "Dashboard interativo de vendas criado com Power BI, conectando múltiplas fontes de dados.",
-    tags: ["Power BI", "SQL"],
-    github: "https://github.com/",
-    ext: "https://app.powerbi.com/",
-  },
-  {
-    title: "Data Pipeline com Python",
-    cover: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400",
-    desc: "ETL automatizado de dados financeiros usando Python e Pandas.",
-    tags: ["Python", "Pandas"],
-    github: "https://github.com/",
-    ext: "https://colab.research.google.com/",
-  },
-  {
-    title: "Visualização SQL Analytics",
-    cover: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400",
-    desc: "Exploração e análise de dados SQL com dashboards dinâmicos.",
-    tags: ["SQL", "Analytics"],
-    github: "https://github.com/",
-    ext: "",
-  },
-  {
-    title: "Gestão de Indicadores em Excel",
+    title: "🏙️ Casas Noturnas",
     cover: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400",
-    desc: "Planilha avançada com automações VBA e dashboards interativos para acompanhamento de KPIs.",
-    tags: ["Excel", "VBA", "Dashboard"],
-    github: "https://github.com/",
+    desc: "Dashboard para gestão de eventos com análise de vendas, público e comandas.",
+    tags: ["Power BI", "Firebase", "SQL", "Excel"],
+    github: "",
     ext: "",
   },
   {
-    title: "Automação de Relatórios PowerPoint",
-    cover: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400",
-    desc: "Geração automática de relatórios visuais no PowerPoint a partir de dados do Power BI.",
-    tags: ["PowerPoint", "Automação"],
-    github: "https://github.com/",
-    ext: "",
-  },
-  {
-    title: "Análise de Dados Google Analytics",
+    title: "💰 MoneyMoney",
     cover: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400",
-    desc: "Dashboards interativos utilizando dados coletados do Google Analytics para tomada de decisões estratégicas.",
-    tags: ["Google Analytics", "Dashboard"],
-    github: "https://github.com/",
-    ext: "https://datastudio.google.com/",
+    desc: "Painel financeiro pessoal com consolidação de gastos, metas e patrimônio.",
+    tags: ["Power BI", "Excel"],
+    github: "",
+    ext: "",
+  },
+  {
+    title: "🎧 Monitoria – Call Center",
+    cover: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400",
+    desc: "Dashboard de qualidade em atendimento, com indicadores por operador e motivos de falha.",
+    tags: ["Power BI", "Excel"],
+    github: "",
+    ext: "",
+  },
+  {
+    title: "📺 Dashboard – Mídia",
+    cover: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
+    desc: "Visualização de KPIs de campanhas digitais integrando múltiplas fontes de dados.",
+    tags: ["Power BI", "SQL", "Google Sheets", "Supermetrics"],
+    github: "",
+    ext: "",
+  },
+  {
+    title: "🛒 Vendas – SPAR",
+    cover: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400",
+    desc: "Acompanhamento de vendas por loja, produto e região com análise de metas e desempenho.",
+    tags: ["Power BI", "Excel", "SQL"],
+    github: "",
+    ext: "",
   },
 ];
 
@@ -67,7 +59,11 @@ export default function ProjectsSection() {
             className="overflow-hidden shadow-lg rounded-lg group hover:scale-105 transition-transform animate-fade-in"
           >
             <div className="h-56 bg-muted relative overflow-hidden">
-              <img src={proj.cover} alt={proj.title} className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300" />
+              <img
+                src={proj.cover}
+                alt={proj.title}
+                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300"
+              />
             </div>
             <CardContent className="py-4 px-5 flex flex-col gap-2">
               <h3 className="font-semibold text-lg">{proj.title}</h3>
@@ -79,16 +75,6 @@ export default function ProjectsSection() {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-4 mt-4">
-                <a href={proj.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <Github className="text-muted-foreground hover:text-primary transition" />
-                </a>
-                {proj.ext && (
-                  <a href={proj.ext} target="_blank" rel="noopener noreferrer" aria-label="Demo">
-                    <ExternalLink className="text-muted-foreground hover:text-primary transition" />
-                  </a>
-                )}
-              </div>
             </CardContent>
           </Card>
         ))}
@@ -96,3 +82,4 @@ export default function ProjectsSection() {
     </section>
   );
 }
+
