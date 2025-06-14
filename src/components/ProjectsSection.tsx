@@ -43,6 +43,14 @@ const projects = [
     github: "",
     ext: "",
   },
+  {
+    title: "⚙️ Automação – VBA: Otimização de Processos no Excel",
+    cover: "https://images.unsplash.com/photo-1516575150278-77136aed6920?w=400",
+    desc: "Automatização de um processo diário com múltiplos PROCVs, formatações e inserções manuais que antes levava 1 hora e passou a ser executado em apenas 15 minutos com dois botões.",
+    tags: ["Excel", "VBA (macros personalizadas)"],
+    github: "",
+    ext: "",
+  },
 ];
 
 export default function ProjectsSection() {
