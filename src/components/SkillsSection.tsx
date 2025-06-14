@@ -7,14 +7,13 @@ import {
   PieChart,
   Cloud,
   Mail,
-  Chart,
   FileSpreadsheet,
   ClipboardCheck,
-  MessageCircleCog,
   Tag,
   FileCode2,
   Server,
   Users,
+  MessageCircle, // available icon to replace MessageCircleCog
 } from "lucide-react";
 
 const skills = [
@@ -26,7 +25,7 @@ const skills = [
       { name: "Power BI", icon: <BarChart3 className="text-yellow-500" /> },
       { name: "Excel (Macros, VBA, fórmulas avançadas)", icon: <FileSpreadsheet className="text-green-700" /> },
       { name: "Python", icon: <FileCode2 className="text-lime-600" /> },
-      { name: "DataViz", icon: <Chart className="text-cyan-500" /> },
+      { name: "DataViz", icon: <BarChart3 className="text-cyan-500" /> },  // replaced Chart with BarChart3
       { name: "Adobe Analytics", icon: <BarChart3 className="text-gray-700" /> },
       { name: "PostgreSQL", icon: <Database className="text-indigo-600" /> },
     ],
