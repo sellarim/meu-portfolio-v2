@@ -44,7 +44,7 @@ export default function CoursesSection() {
   return (
     <section
       id="courses"
-      className="w-full py-20 px-6 md:px-16 bg-background"
+      className="w-full py-20 px-6 md:px-16 bg-muted"
     >
       <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">
         <span role="img" aria-label="Gráfico" className="mr-2">📊</span>
@@ -54,7 +54,7 @@ export default function CoursesSection() {
         {courses.map(({ title, institution, logo, period }) => (
           <div
             key={title + institution}
-            className="flex gap-4 items-start bg-muted rounded-xl shadow px-6 py-5 flex-1 min-w-[260px] md:max-w-[calc(33%-16px)]"
+            className="flex gap-4 items-start bg-background rounded-xl shadow px-6 py-5 flex-1 min-w-[260px] md:max-w-[calc(33%-16px)]"
           >
             <img
               src={logo}
@@ -62,7 +62,7 @@ export default function CoursesSection() {
               className="w-12 h-12 object-contain rounded-md bg-white border p-1"
             />
             <div>
-              <h3 className="font-bold text-base">{title}</h3>
+              <h3 className="font-bold text-base text-primary">{title}</h3>
               <span className="text-sm text-muted-foreground font-medium">{institution}</span>
               <span className="ml-2 text-xs text-muted-foreground">{period}</span>
             </div>
@@ -87,3 +87,4 @@ export default function CoursesSection() {
     </section>
   );
 }
+
