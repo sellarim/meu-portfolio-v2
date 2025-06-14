@@ -29,7 +29,7 @@ const projects = [
   },
   {
     title: "📺 Dashboard – Mídia",
-    cover: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400",
+    cover: "/lovable-uploads/f3b49063-97e9-49b2-a706-ef197223b87a.png",
     desc: "Visualização de KPIs de campanhas digitais integrando múltiplas fontes de dados.",
     tags: ["Power BI", "SQL", "Google Sheets", "Supermetrics"],
     github: "",
