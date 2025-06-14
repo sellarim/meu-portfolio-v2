@@ -1,3 +1,4 @@
+
 import { useCallback } from "react";
 import { Github, Linkedin, Instagram, Youtube, BarChart3, Database, Code, Layers, Sun, Moon, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -97,32 +98,36 @@ export default function HeroSection() {
       >
         <span role="img" aria-label="Gráfico">📊</span> Ver projetos
       </Button>
-      {/* Modo claro/escuro */}
-      <button
-        className={cn("fixed top-5 right-7 md:right-16 bg-muted rounded-full p-2 transition-colors shadow z-40 focus:outline-none")}
-        aria-label="Alternar tema"
-        onClick={() => setDark(v => !v)}
-        type="button"
-        style={{ marginLeft: 48 }}
-      >
-        {dark ? <Sun className="text-yellow-400" /> : <Moon className="text-gray-700" />}
-      </button>
-      {/* Toggle do modo 8 bits */}
-      <button
-        className={cn("fixed top-5 right-20 md:right-36 bg-yellow-300 border-4 border-yellow-700 shadow-lg rounded-none p-2 z-40 focus:outline-none flex items-center gap-2", eightBitMode && "ring-4 ring-pink-500")}
-        aria-label="Alternar modo 8 bits"
-        onClick={() => setEightBitMode(e => !e)}
-        type="button"
-        title="Ativar/desativar modo 8 bits"
-        style={{
-          fontFamily: "'Press Start 2P', monospace",
-          fontSize: 11,
-          textShadow: eightBitMode ? "2px 2px #ffb300" : "none"
-        }}
-      >
-        <span style={{fontSize: 16, marginRight: 4}}>🕹️</span>
-        {eightBitMode ? "8 bits ON" : "8 bits"}
-      </button>
+      {/* Modo claro/escuro e 8 bits, um ao lado do outro */}
+      <div className="fixed top-5 right-7 md:right-16 flex items-center gap-3 z-40">
+        {/* Botão de 8 bits */}
+        <button
+          className={cn(
+            "bg-muted rounded-full p-2 transition-colors shadow focus:outline-none flex items-center justify-center",
+            eightBitMode && "ring-2 ring-pink-500"
+          )}
+          aria-label="Alternar modo 8 bits"
+          onClick={() => setEightBitMode(e => !e)}
+          type="button"
+          title="Ativar/desativar modo 8 bits"
+          style={{
+            fontFamily: "'Press Start 2P', monospace",
+            fontSize: 15
+          }}
+        >
+          <span role="img" aria-label="8 bits" style={{fontSize: 16}}>🕹️</span>
+        </button>
+        {/* Botão de tema claro/escuro */}
+        <button
+          className={cn("bg-muted rounded-full p-2 transition-colors shadow focus:outline-none flex items-center justify-center")}
+          aria-label="Alternar tema"
+          onClick={() => setDark(v => !v)}
+          type="button"
+        >
+          {dark ? <Sun className="text-yellow-400" /> : <Moon className="text-gray-700" />}
+        </button>
+      </div>
     </header>
   );
 }
+
