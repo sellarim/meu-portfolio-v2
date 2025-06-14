@@ -50,7 +50,7 @@ const experiences = [
   },
   {
     company: "Club Yacht SP",
-    logo: "https://media.licdn.com/dms/image/C510BAQHb3k7b8Z4NTA/company-logo_200_200/0/1630689797552/clubyacht_logo?e=1722470400&v=beta&t=NxHXCnOGC6pGcvm9BrZKoU_GPDtuAnIfjTJx-_gdDpA",
+    logo: "/lovable-uploads/86760fdc-5871-4238-a4d3-9dc1c1180771.png",
     location: "São Paulo e Região, Brasil",
     roles: [
       {
