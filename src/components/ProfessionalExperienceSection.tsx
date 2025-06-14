@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Briefcase, Building2, MapPin, CalendarDays, ChevronDown, ChevronUp } from "lucide-react";
 import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "./ui/collapsible";
@@ -33,7 +32,7 @@ const experiences = [
   },
   {
     company: "Campari Group",
-    logo: "https://media.licdn.com/dms/image/C4E0BAQGyyzIbPV4ctQ/company-logo_200_200/0/1632844400141/camparigroup_logo?e=1722470400&v=beta&t=UidEG2QfIYAWfnMw_7yDGyG40z4diqZViCvQrB16QRQ",
+    logo: "/lovable-uploads/67f9333a-2a2b-41e9-ab4c-32ee1189c70d.png",
     location: "São Paulo, Brasil",
     roles: [
       {
