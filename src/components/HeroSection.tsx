@@ -1,5 +1,6 @@
+
 import { useCallback } from "react";
-import { Github, Linkedin, Instagram, Youtube, BarChart3, Database, Code, Layers, Sun, Moon } from "lucide-react";
+import { Github, Linkedin, Instagram, Youtube, BarChart3, Database, Code, Layers, Sun, Moon, Whatsapp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
@@ -72,6 +73,9 @@ export default function HeroSection() {
           </a>
           <a href="https://www.youtube.com/@leonardo-miralles" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
             <Button variant="ghost" size="icon"><Youtube /></Button>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5511945720468" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <Button variant="ghost" size="icon"><Whatsapp /></Button>
           </a>
         </div>
       </div>
