@@ -35,7 +35,7 @@ export default function HeroSection() {
           className="object-cover w-full h-full"
           style={{
             objectPosition: "center 56%",
-            transform: "scale(1.13)"
+            transform: "scale(1.03)"
           }}
         />
       </div>
