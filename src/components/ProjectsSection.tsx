@@ -13,7 +13,6 @@ const projects = [
   },
   {
     title: "💰 MoneyMoney",
-    // Novas propriedades para MoneyMoney
     cover: "/lovable-uploads/841cb689-76f1-441f-893f-1a3371336b54.png",
     desc: "Painel financeiro pessoal com consolidação de gastos, metas e patrimônio.",
     tags: ["Power BI", "Excel"],
@@ -38,11 +37,11 @@ const projects = [
   },
   {
     title: "🛒 Vendas – SPAR",
-    cover: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400",
+    cover: "/lovable-uploads/9dcf39a6-6117-4a5a-a21c-96eabbdb843c.png", // miniatura atualizada
     desc: "Acompanhamento de vendas por loja, produto e região com análise de metas e desempenho.",
     tags: ["Power BI", "Excel", "SQL"],
     github: "",
-    ext: "",
+    ext: "https://app.powerbi.com/view?r=eyJrIjoiNWQzNWM3NTItNWRmMi00YjNmLWIzYzktZGMwNWQ5NThlNzFlIiwidCI6ImJlYWZkYjE2LTVlY2YtNGVmNC1hMjA2LWJlMTEyMDA0ZDU4YiJ9",
   },
   {
     title: "⚙️ Automação – VBA: Otimização de Processos no Excel",
@@ -67,7 +66,8 @@ export default function ProjectsSection() {
           const isClickableProj =
             proj.title === "📺 Dashboard – Mídia" ||
             proj.title === "💰 MoneyMoney" ||
-            proj.title === "🏙️ Casas Noturnas";
+            proj.title === "🏙️ Casas Noturnas" ||
+            proj.title === "🛒 Vendas – SPAR";
 
           if (isClickableProj && proj.ext) {
             return (
