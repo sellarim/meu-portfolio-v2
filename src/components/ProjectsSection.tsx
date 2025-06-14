@@ -1,3 +1,4 @@
+
 import { Github, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -62,18 +63,60 @@ export default function ProjectsSection() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {projects.map((proj) => {
           const isMidia = proj.title === "📺 Dashboard – Mídia";
-          const content = (
-            <>
+          // Para "Dashboard – Mídia", tornar a imagem e o título clicáveis (link para ext)
+          if (isMidia && proj.ext) {
+            return (
+              <Card
+                key={proj.title}
+                className="overflow-hidden shadow-lg rounded-lg group hover:scale-105 transition-transform animate-fade-in h-full"
+              >
+                <a
+                  href={proj.ext}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block focus:outline-none focus:ring-2 focus:ring-primary/70 h-full"
+                  tabIndex={0}
+                  title="Abrir Dashboard – Mídia"
+                  style={{ textDecoration: "none" }}
+                >
+                  <div>
+                    <div className="h-56 bg-black relative overflow-hidden">
+                      <img
+                        src={proj.cover}
+                        alt={proj.title}
+                        className="w-full h-full transition-transform duration-300 object-contain bg-black group-hover:scale-110"
+                      />
+                    </div>
+                    <CardContent className="py-4 px-5 flex flex-col gap-2 !pb-3">
+                      <h3 className="font-semibold text-lg hover:underline">
+                        {proj.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm">{proj.desc}</p>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {proj.tags.map((tag) => (
+                          <span key={tag} className="bg-accent/60 text-xs font-semibold px-2 py-1 rounded">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </div>
+                </a>
+              </Card>
+            );
+          }
+
+          // Para os outros cards
+          return (
+            <Card
+              key={proj.title}
+              className="overflow-hidden shadow-lg rounded-lg group hover:scale-105 transition-transform animate-fade-in h-full"
+            >
               <div className="h-56 bg-muted relative overflow-hidden">
                 <img
                   src={proj.cover}
                   alt={proj.title}
-                  className={
-                    "w-full h-full transition-transform duration-300 " +
-                    (isMidia
-                      ? "object-contain bg-black group-hover:scale-110"
-                      : "object-cover group-hover:scale-110")
-                  }
+                  className="w-full h-full transition-transform duration-300 object-cover group-hover:scale-110"
                 />
               </div>
               <CardContent className="py-4 px-5 flex flex-col gap-2">
@@ -89,50 +132,6 @@ export default function ProjectsSection() {
                   ))}
                 </div>
               </CardContent>
-            </>
-          );
-          // Para "Dashboard – Mídia", tornar a imagem e o título clicáveis
-          return (
-            <Card
-              key={proj.title}
-              className="overflow-hidden shadow-lg rounded-lg group hover:scale-105 transition-transform animate-fade-in"
-            >
-              {isMidia ? (
-                <a
-                  href={proj.ext}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block focus:outline-none focus:ring-2 focus:ring-primary/70"
-                  tabIndex={0}
-                  title="Abrir Dashboard – Mídia"
-                >
-                  {/* Cobre tanto a imagem quanto o CardContent */}
-                  <div>
-                    <div className="h-56 bg-muted relative overflow-hidden">
-                      <img
-                        src={proj.cover}
-                        alt={proj.title}
-                        className="w-full h-full transition-transform duration-300 object-contain bg-black group-hover:scale-110"
-                      />
-                    </div>
-                    <CardContent className="py-4 px-5 flex flex-col gap-2">
-                      <h3 className="font-semibold text-lg hover:underline">
-                        {proj.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm">{proj.desc}</p>
-                      <div className="flex flex-wrap gap-2 mt-2">
-                        {proj.tags.map((tag) => (
-                          <span key={tag} className="bg-accent/60 text-xs font-semibold px-2 py-1 rounded">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </div>
-                </a>
-              ) : (
-                content
-              )}
             </Card>
           );
         })}
