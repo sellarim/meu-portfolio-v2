@@ -1,4 +1,3 @@
-
 import { Github, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -73,7 +72,7 @@ export default function ProjectsSection() {
                 className={
                   "w-full h-full transition-transform duration-300 " +
                   (proj.title === "📺 Dashboard – Mídia"
-                    ? "object-contain bg-black"
+                    ? "object-contain bg-black group-hover:scale-110"
                     : "object-cover group-hover:scale-110")
                 }
               />
@@ -95,4 +94,3 @@ export default function ProjectsSection() {
     </section>
   );
 }
-
