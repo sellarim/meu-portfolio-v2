@@ -1,12 +1,10 @@
-
 import { useCallback } from "react";
-import { Github, Linkedin, Instagram, Youtube, BarChart3, Database, Code, Layers, Sun, Moon } from "lucide-react";
-import { icons } from "lucide-react"; // Import icons object for dynamic icons
+import { Github, Linkedin, Instagram, Youtube, BarChart3, Database, Code, Layers, Sun, Moon, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
-const WhatsappIcon = icons.Whatsapp;
+const WhatsappIcon = MessageCircle;
 
 const stack = [
   { name: "Power BI", icon: <BarChart3 className="text-yellow-500" /> },

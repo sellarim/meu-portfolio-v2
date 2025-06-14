@@ -1,11 +1,9 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/use-toast";
-import { Linkedin, Github, Instagram, Youtube, Mail } from "lucide-react";
-import { icons } from "lucide-react"; // Import icons object for dynamic icons
+import { Linkedin, Github, Instagram, Youtube, Mail, MessageCircle } from "lucide-react";
 
-const WhatsappIcon = icons.Whatsapp;
+const WhatsappIcon = MessageCircle;
 
 const links = [
   { href: "https://www.linkedin.com/in/leo-miralles/", icon: <Linkedin /> },
@@ -13,8 +11,8 @@ const links = [
   { href: "https://www.instagram.com/leonardomiralless/", icon: <Instagram /> },
   { href: "https://www.youtube.com/@leonardo-miralles", icon: <Youtube /> },
   { href: "mailto:leonardomiralles@hotmail.com", icon: <Mail /> },
-  // WhatsApp link with dynamically referenced icon
-  { href: "https://api.whatsapp.com/send?phone=5511945720468", icon: WhatsappIcon ? <WhatsappIcon /> : null }, 
+  // WhatsApp link with chat icon as placeholder
+  { href: "https://api.whatsapp.com/send?phone=5511945720468", icon: WhatsappIcon ? <WhatsappIcon /> : null },
 ];
 
 export default function ContactSection() {
