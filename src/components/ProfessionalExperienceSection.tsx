@@ -182,7 +182,7 @@ const experiences = [
   },
   {
     company: "Prefeitura de São Paulo",
-    logo: "https://media.licdn.com/dms/image/C4E0BAQFgkqk-KmC1yw/company-logo_200_200/0/1519856080052/prefeitura_do_municipio_de_s_o_paulo_logo?e=1722470400&v=beta&t=u6p0WrUTFHuxu1-RsdwCCcX6JxoazqvCbFiqhv5gyWk",
+    logo: "/lovable-uploads/7194f916-79b0-4f2b-9b60-5a67a3071905.png",
     location: "São Paulo, SP",
     roles: [
       {
