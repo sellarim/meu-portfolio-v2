@@ -27,9 +27,17 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <header className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 px-6 md:px-16 py-16 relative">
+    <header
+      className="
+        flex flex-col items-center justify-center
+        gap-6 md:gap-8
+        px-6 md:px-16 py-16
+        relative w-full mx-auto
+        text-center
+        "
+    >
       {/* Foto estilo hero atualizada */}
-      <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg bg-muted flex-shrink-0 flex items-center justify-center self-start mt-[-10px] md:mt-2">
+      <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg bg-muted flex-shrink-0 flex items-center justify-center mt-0 mb-3">
         <img
           src="/lovable-uploads/cebcd6b7-d72d-4b85-b2b3-6bde905d945f.png"
           alt="Foto de perfil"
@@ -41,16 +49,16 @@ export default function HeroSection() {
         />
       </div>
       {/* Textos da hero */}
-      <div className="flex-1 flex flex-col gap-4 items-center md:items-start">
+      <div className="flex-1 flex flex-col gap-4 items-center">
         <span className="text-muted-foreground text-sm md:text-base mb-1">Olá! Eu sou</span>
         <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2 font-sans">Leonardo Miralles</h1>
-        <ul className="list-disc pl-5 space-y-1 text-lg md:text-xl text-foreground max-w-xl text-center md:text-left">
+        <ul className="list-disc pl-5 space-y-1 text-lg md:text-xl text-foreground max-w-xl text-center">
           <li>Analista de BI com +6 anos de experiência, especialista em transformar dados em decisões estratégicas.</li>
           <li>Formação em Ciência de Dados, com base técnica em Informática e Administração.</li>
           <li>Expertise em integração de dados, automações com VBA/SQL e criação de dashboards interativos no Power BI.</li>
           <li>Atualmente sou o Analista de BI mais seguido do Linkedin BR.</li>
         </ul>
-        <div className="flex gap-3 items-center flex-wrap mt-3">
+        <div className="flex gap-3 items-center flex-wrap mt-3 justify-center">
           {stack.map((tech) => (
             <span
               key={tech.name}
@@ -63,7 +71,7 @@ export default function HeroSection() {
         <blockquote className="italic text-primary mt-4 text-md md:text-lg">
           “Dados são o novo petróleo, mas só têm valor quando refinados.”
         </blockquote>
-        <div className="flex gap-4 mt-4">
+        <div className="flex gap-4 mt-4 justify-center">
           <a href="https://www.linkedin.com/in/leo-miralles/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Button variant="ghost" size="icon"><Linkedin /></Button>
           </a>
@@ -104,4 +112,3 @@ export default function HeroSection() {
     </header>
   );
 }
-
