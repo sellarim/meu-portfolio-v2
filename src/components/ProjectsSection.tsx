@@ -5,11 +5,11 @@ import { Card, CardContent } from "@/components/ui/card";
 const projects = [
   {
     title: "🏙️ Casas Noturnas",
-    cover: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400",
+    cover: "/lovable-uploads/cdd2d155-ef17-44e9-8805-e32bd412aa53.png",
     desc: "Dashboard para gestão de eventos com análise de vendas, público e comandas.",
     tags: ["Power BI", "Firebase", "SQL", "Excel"],
     github: "",
-    ext: "",
+    ext: "https://app.powerbi.com/view?r=eyJrIjoiNzA0NDdhYmUtZDgyOC00MTJlLWIzZGEtODBlNTc5ODNhZjU1IiwidCI6ImJlYWZkYjE2LTVlY2YtNGVmNC1hMjA2LWJlMTEyMDA0ZDU4YiJ9",
   },
   {
     title: "💰 MoneyMoney",
@@ -63,10 +63,11 @@ export default function ProjectsSection() {
       <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">💼 Portfólio de Projetos</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {projects.map((proj) => {
-          // Se for MoneyMoney ou Dashboard – Mídia: imagem e título clicáveis, link em nova aba
+          // Tornar imagem e título clicáveis quando houver link externo (para todos projetos desejados)
           const isClickableProj =
             proj.title === "📺 Dashboard – Mídia" ||
-            proj.title === "💰 MoneyMoney";
+            proj.title === "💰 MoneyMoney" ||
+            proj.title === "🏙️ Casas Noturnas";
 
           if (isClickableProj && proj.ext) {
             return (
