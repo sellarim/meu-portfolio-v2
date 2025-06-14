@@ -1,4 +1,3 @@
-
 import { useCallback } from "react";
 import { Github, Linkedin, Star, BarChart3, Database, Code, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -32,7 +31,7 @@ export default function HeroSection() {
       {/* Textos da hero */}
       <div className="flex-1 flex flex-col gap-4 items-center md:items-start">
         <span className="text-muted-foreground text-sm md:text-base mb-1">Olá! Eu sou</span>
-        <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2 font-sans">Seu Nome</h1>
+        <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2 font-sans">Leonardo Miralles</h1>
         <p className="text-lg md:text-xl text-foreground max-w-xl text-center md:text-left">
           {"Especialista em Dados apaixonado por transformar dados em decisões. Experiência com BI, analytics, integração e visualização. Foco em impacto e excelência."}
         </p>

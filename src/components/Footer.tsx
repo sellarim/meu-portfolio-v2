@@ -19,7 +19,7 @@ export default function Footer() {
           >{label}</a>
         ))}
       </nav>
-      <span className="text-muted-foreground text-xs">© {new Date().getFullYear()} Seu Nome — Portfólio de Dados</span>
+      <span className="text-muted-foreground text-xs">© {new Date().getFullYear()} Leonardo Miralles — Portfólio de Dados</span>
     </footer>
   );
 }
