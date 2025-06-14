@@ -7,12 +7,12 @@ import ProfessionalExperienceSection from "@/components/ProfessionalExperienceSe
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import CoursesSection from "@/components/CoursesSection";
-import SiteBadge from "@/components/SiteBadge";
+// Removido: import SiteBadge from "@/components/SiteBadge";
 
 const Index = () => {
   return (
     <div className="bg-background min-h-screen flex flex-col">
-      <SiteBadge />
+      {/* Removido: <SiteBadge /> */}
       <main className="flex-grow">
         <HeroSection />
         <ProjectsSection />
