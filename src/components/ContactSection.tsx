@@ -3,11 +3,13 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
-import { Linkedin, Github, Mail } from "lucide-react";
+import { Linkedin, Github, Instagram, Youtube, Mail } from "lucide-react";
 
 const links = [
-  { href: "https://linkedin.com/", icon: <Linkedin /> },
-  { href: "https://github.com/", icon: <Github /> },
+  { href: "https://www.linkedin.com/in/leo-miralles/", icon: <Linkedin /> },
+  { href: "https://github.com/sellarim", icon: <Github /> },
+  { href: "https://www.instagram.com/leonardomiralless/", icon: <Instagram /> },
+  { href: "https://www.youtube.com/@leonardo-miralles", icon: <Youtube /> },
   { href: "mailto:seuemail@email.com", icon: <Mail /> },
 ];
 
@@ -75,3 +77,4 @@ export default function ContactSection() {
     </section>
   );
 }
+

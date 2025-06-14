@@ -1,6 +1,5 @@
-
 import { useCallback } from "react";
-import { Github, Linkedin, Star, BarChart3, Database, Code, Layers, Sun, Moon } from "lucide-react";
+import { Github, Linkedin, Instagram, Youtube, BarChart3, Database, Code, Layers, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
@@ -51,11 +50,17 @@ export default function HeroSection() {
           “Dados são o novo petróleo, mas só têm valor quando refinados.”
         </blockquote>
         <div className="flex gap-4 mt-4">
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/leo-miralles/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <Button variant="ghost" size="icon"><Linkedin /></Button>
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/sellarim" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <Button variant="ghost" size="icon"><Github /></Button>
+          </a>
+          <a href="https://www.instagram.com/leonardomiralless/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <Button variant="ghost" size="icon"><Instagram /></Button>
+          </a>
+          <a href="https://www.youtube.com/@leonardo-miralles" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <Button variant="ghost" size="icon"><Youtube /></Button>
           </a>
         </div>
       </div>
