@@ -3,7 +3,7 @@ const educations = [
   {
     title: "Curso Superior de Tecnologia (CST), Ciência de dados",
     institution: "UNINTER Centro Universitário Internacional",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_UNINTER.png/1200px-Logo_UNINTER.png",
+    logo: "/lovable-uploads/d5a583e1-0af8-4f2a-81ab-42512199579b.png",
     period: "ago de 2024 - ago de 2026",
     desc: "",
   },
@@ -46,3 +46,4 @@ export default function ExperienceSection() {
     </section>
   );
 }
+
