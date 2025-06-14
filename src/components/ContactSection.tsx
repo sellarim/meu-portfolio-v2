@@ -2,7 +2,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/components/ui/use-toast";
-import { Linkedin, Github, Instagram, Youtube, Mail, Whatsapp } from "lucide-react";
+import { Linkedin, Github, Instagram, Youtube, Mail } from "lucide-react";
+import { Icon } from "lucide-react"; // Import Icon for dynamic icons
 
 // Atualizado o link do email para o novo endereço
 const links = [
@@ -11,7 +12,8 @@ const links = [
   { href: "https://www.instagram.com/leonardomiralless/", icon: <Instagram /> },
   { href: "https://www.youtube.com/@leonardo-miralles", icon: <Youtube /> },
   { href: "mailto:leonardomiralles@hotmail.com", icon: <Mail /> },
-  { href: "https://api.whatsapp.com/send?phone=5511945720468", icon: <Whatsapp /> }, // WhatsApp link inserido com ícone correto
+  // Use Icon for WhatsApp
+  { href: "https://api.whatsapp.com/send?phone=5511945720468", icon: <Icon name="whatsapp" /> }, // WhatsApp link inserido com ícone correto
 ];
 
 export default function ContactSection() {
