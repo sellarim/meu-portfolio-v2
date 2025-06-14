@@ -21,11 +21,11 @@ const projects = [
   },
   {
     title: "🎧 Monitoria – Call Center",
-    cover: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400",
+    cover: "/lovable-uploads/5b10e6e9-8b84-40ed-b100-dab710c70c12.png",
     desc: "Dashboard de qualidade em atendimento, com indicadores por operador e motivos de falha.",
     tags: ["Power BI", "Excel"],
     github: "",
-    ext: "",
+    ext: "https://app.powerbi.com/view?r=eyJrIjoiNWUxNDNkMjQtNDk3OC00MjZhLTlhNzQtZjk2M2EzNzVkMDlmIiwidCI6ImJlYWZkYjE2LTVlY2YtNGVmNC1hMjA2LWJlMTEyMDA0ZDU4YiJ9",
   },
   {
     title: "📺 Dashboard – Mídia",
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: "🛒 Vendas – SPAR",
-    cover: "/lovable-uploads/9dcf39a6-6117-4a5a-a21c-96eabbdb843c.png", // miniatura atualizada
+    cover: "/lovable-uploads/9dcf39a6-6117-4a5a-a21c-96eabbdb843c.png",
     desc: "Acompanhamento de vendas por loja, produto e região com análise de metas e desempenho.",
     tags: ["Power BI", "Excel", "SQL"],
     github: "",
@@ -67,7 +67,8 @@ export default function ProjectsSection() {
             proj.title === "📺 Dashboard – Mídia" ||
             proj.title === "💰 MoneyMoney" ||
             proj.title === "🏙️ Casas Noturnas" ||
-            proj.title === "🛒 Vendas – SPAR";
+            proj.title === "🛒 Vendas – SPAR" ||
+            proj.title === "🎧 Monitoria – Call Center";
 
           if (isClickableProj && proj.ext) {
             return (
