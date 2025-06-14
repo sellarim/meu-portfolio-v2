@@ -86,7 +86,7 @@ const experiences = [
   },
   {
     company: "Cheil Brasil",
-    logo: "https://media.licdn.com/dms/image/C4E0BAQHMk2L96lpEkg/company-logo_200_200/0/1630633872570/cheil_logo?e=1722470400&v=beta&t=n5h4hvYP1drd7k5QIuTuVUFjnJELXZClvZZ_bETfxps",
+    logo: "/lovable-uploads/d3c6219d-d36c-457f-8ce1-e0470a6b6fd1.png",
     location: "São Paulo, Brasil",
     roles: [
       {
