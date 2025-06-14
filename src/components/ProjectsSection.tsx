@@ -32,7 +32,7 @@ const projects = [
     desc: "Visualização de KPIs de campanhas digitais integrando múltiplas fontes de dados.",
     tags: ["Power BI", "SQL", "Google Sheets", "Supermetrics"],
     github: "",
-    ext: "",
+    ext: "https://app.powerbi.com/view?r=eyJrIjoiYzFlMDQ5ZTMtY2Q2OS00YzBiLWI1MzgtMTRkMDQ3ODI5MGJjIiwidCI6ImJlYWZkYjE2LTVlY2YtNGVmNC1hMjA2LWJlMTEyMDA0ZDU4YiJ9",
   },
   {
     title: "🛒 Vendas – SPAR",
@@ -60,36 +60,82 @@ export default function ProjectsSection() {
     >
       <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">💼 Portfólio de Projetos</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        {projects.map((proj, idx) => (
-          <Card
-            key={proj.title}
-            className="overflow-hidden shadow-lg rounded-lg group hover:scale-105 transition-transform animate-fade-in"
-          >
-            <div className="h-56 bg-muted relative overflow-hidden">
-              <img
-                src={proj.cover}
-                alt={proj.title}
-                className={
-                  "w-full h-full transition-transform duration-300 " +
-                  (proj.title === "📺 Dashboard – Mídia"
-                    ? "object-contain bg-black group-hover:scale-110"
-                    : "object-cover group-hover:scale-110")
-                }
-              />
-            </div>
-            <CardContent className="py-4 px-5 flex flex-col gap-2">
-              <h3 className="font-semibold text-lg">{proj.title}</h3>
-              <p className="text-muted-foreground text-sm">{proj.desc}</p>
-              <div className="flex flex-wrap gap-2 mt-2">
-                {proj.tags.map((tag) => (
-                  <span key={tag} className="bg-accent/60 text-xs font-semibold px-2 py-1 rounded">
-                    {tag}
-                  </span>
-                ))}
+        {projects.map((proj) => {
+          const isMidia = proj.title === "📺 Dashboard – Mídia";
+          const content = (
+            <>
+              <div className="h-56 bg-muted relative overflow-hidden">
+                <img
+                  src={proj.cover}
+                  alt={proj.title}
+                  className={
+                    "w-full h-full transition-transform duration-300 " +
+                    (isMidia
+                      ? "object-contain bg-black group-hover:scale-110"
+                      : "object-cover group-hover:scale-110")
+                  }
+                />
               </div>
-            </CardContent>
-          </Card>
-        ))}
+              <CardContent className="py-4 px-5 flex flex-col gap-2">
+                <h3 className="font-semibold text-lg">
+                  {proj.title}
+                </h3>
+                <p className="text-muted-foreground text-sm">{proj.desc}</p>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {proj.tags.map((tag) => (
+                    <span key={tag} className="bg-accent/60 text-xs font-semibold px-2 py-1 rounded">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+            </>
+          );
+          // Para "Dashboard – Mídia", tornar a imagem e o título clicáveis
+          return (
+            <Card
+              key={proj.title}
+              className="overflow-hidden shadow-lg rounded-lg group hover:scale-105 transition-transform animate-fade-in"
+            >
+              {isMidia ? (
+                <a
+                  href={proj.ext}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block focus:outline-none focus:ring-2 focus:ring-primary/70"
+                  tabIndex={0}
+                  title="Abrir Dashboard – Mídia"
+                >
+                  {/* Cobre tanto a imagem quanto o CardContent */}
+                  <div>
+                    <div className="h-56 bg-muted relative overflow-hidden">
+                      <img
+                        src={proj.cover}
+                        alt={proj.title}
+                        className="w-full h-full transition-transform duration-300 object-contain bg-black group-hover:scale-110"
+                      />
+                    </div>
+                    <CardContent className="py-4 px-5 flex flex-col gap-2">
+                      <h3 className="font-semibold text-lg hover:underline">
+                        {proj.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm">{proj.desc}</p>
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {proj.tags.map((tag) => (
+                          <span key={tag} className="bg-accent/60 text-xs font-semibold px-2 py-1 rounded">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </div>
+                </a>
+              ) : (
+                content
+              )}
+            </Card>
+          );
+        })}
       </div>
     </section>
   );
