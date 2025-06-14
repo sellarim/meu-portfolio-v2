@@ -1,4 +1,3 @@
-
 import { Github, ExternalLink } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -45,11 +44,11 @@ const projects = [
   },
   {
     title: "⚙️ Automação – VBA: Otimização de Processos no Excel",
-    cover: "https://images.unsplash.com/photo-1516575150278-77136aed6920?w=400",
+    cover: "/lovable-uploads/8b4274ad-58ad-4e16-9e58-dcf88f7206c4.png",
     desc: "Automatização de um processo diário com múltiplos PROCVs, formatações e inserções manuais que antes levava 1 hora e passou a ser executado em apenas 15 minutos com dois botões.",
     tags: ["Excel", "VBA (macros personalizadas)"],
     github: "",
-    ext: "",
+    ext: "https://i.imgur.com/1jShSHa.png",
   },
 ];
 
@@ -68,7 +67,8 @@ export default function ProjectsSection() {
             proj.title === "💰 MoneyMoney" ||
             proj.title === "🏙️ Casas Noturnas" ||
             proj.title === "🛒 Vendas – SPAR" ||
-            proj.title === "🎧 Monitoria – Call Center";
+            proj.title === "🎧 Monitoria – Call Center" ||
+            proj.title === "⚙️ Automação – VBA: Otimização de Processos no Excel";
 
           if (isClickableProj && proj.ext) {
             return (
