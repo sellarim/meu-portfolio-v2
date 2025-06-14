@@ -3,47 +3,47 @@ import { Button } from "@/components/ui/button";
 
 const courses = [
   {
-    title: "Certificação - Microsoft Power BI",
-    institution: "Microsoft",
-    logo: "https://img.icons8.com/color/48/000000/microsoft.png",
-    period: "2023",
-    desc: "Certificado oficial em Power BI e relatórios interativos.",
+    title: "Compliance e proteção de dados",
+    institution: "PUCRS",
+    logo: "/lovable-uploads/0af3a170-d588-498f-823b-f86f7f6e47ad.png",
+    period: "abr. 2025",
+    desc: "Competências: Conformidade legal · LGPD"
   },
   {
-    title: "Python para Dados",
-    institution: "DataCamp",
-    logo: "https://seeklogo.com/images/D/datacamp-logo-241640C0C8-seeklogo.com.png",
-    period: "2022",
-    desc: "Curso intensivo de Python voltado para análise e tratamento de dados.",
+    title: "Banco de dados",
+    institution: "Ada",
+    logo: "/lovable-uploads/2dbaf2ae-ca87-4911-bb11-cda69f853534.png",
+    period: "jan. 2025",
+    desc: ""
   },
   {
-    title: "Introdução ao SQL",
-    institution: "Alura",
-    logo: "https://www.alura.com.br/assets/api/logos/alura.svg",
-    period: "2022",
-    desc: "Fundamentos de SQL, consultas e manipulação de bancos de dados.",
+    title: "Data Visualization with Python",
+    institution: "IBM",
+    logo: "/lovable-uploads/010edcaa-2527-4993-b797-913c4c8a0d1d.png",
+    period: "nov. 2024",
+    desc: ""
   },
   {
-    title: "Power Query e ETL",
-    institution: "Coursera",
-    logo: "https://www.coursera.org/images/coursera-favicon.ico",
-    period: "2024",
-    desc: "Automação e ETL de dados usando Power Query.",
+    title: "Inteligência Artificial - Google Cloud",
+    institution: "FUNDAÇÃO FAT",
+    logo: "/lovable-uploads/2cc2f069-3eca-440c-8f38-522396550297.png",
+    period: "out. 2024",
+    desc: ""
   },
   {
-    title: "Excel Avançado",
-    institution: "Fundação Bradesco",
-    logo: "https://www.ev.org.br/Content/img/icons/favicon-32x32.png",
-    period: "2023",
-    desc: "Ferramentas avançadas de análise e visualização no Excel.",
+    title: "Prompt Engineering Foundation Professional Certification - CPEFPC™",
+    institution: "Certiprof",
+    logo: "/lovable-uploads/18fb1a98-af23-40f3-bc7a-53ff2300a980.png",
+    period: "out. 2024",
+    desc: ""
   },
   {
-    title: "Estatística para Dados",
-    institution: "Udemy",
-    logo: "https://www.udemy.com/staticx/udemy/images/v7/favicon-udemy.ico",
-    period: "2023",
-    desc: "Conceitos estatísticos essenciais para análise de dados.",
-  },
+    title: "Cloud Essentials - Knowledge Badge",
+    institution: "Amazon Web Services (AWS)",
+    logo: "/lovable-uploads/b8ad9a39-4e1e-4734-9590-3568a339d551.png",
+    period: "set. 2024",
+    desc: "Competências: Amazon Web Services · Amazon EC2 · Computação em nuvem · AWS Lambda · Amazon S3"
+  }
 ];
 
 export default function CoursesSection() {
@@ -71,7 +71,7 @@ export default function CoursesSection() {
               <h3 className="font-bold text-base">{title}</h3>
               <span className="text-sm text-muted-foreground font-medium">{institution}</span>
               <span className="ml-2 text-xs text-muted-foreground">{period}</span>
-              <p className="text-sm mt-2 text-foreground">{desc}</p>
+              {desc && <p className="text-sm mt-2 text-foreground">{desc}</p>}
             </div>
           </div>
         ))}
