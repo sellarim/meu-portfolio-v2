@@ -51,7 +51,7 @@ export default function HeroSection() {
       <div className="flex-1 flex flex-col gap-4 items-center">
         <span className="text-muted-foreground text-sm md:text-base mb-1">Olá! Eu sou</span>
         <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2 font-sans">Leonardo Miralles</h1>
-        <ul className="list-disc pl-5 space-y-1 text-lg md:text-xl text-foreground max-w-xl mx-auto text-right">
+        <ul className="list-disc pl-5 space-y-1 text-lg md:text-xl text-foreground max-w-xl mx-auto text-left">
           <li>Analista de BI com +6 anos de experiência, especialista em transformar dados em decisões estratégicas.</li>
           <li>Formação em Ciência de Dados, com base técnica em Informática e Administração.</li>
           <li>Expertise em integração de dados, automações com VBA/SQL e criação de dashboards interativos no Power BI.</li>
