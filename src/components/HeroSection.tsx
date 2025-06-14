@@ -34,7 +34,10 @@ export default function HeroSection() {
         <span className="text-muted-foreground text-sm md:text-base mb-1">Olá! Eu sou</span>
         <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-2 font-sans">Leonardo Miralles</h1>
         <p className="text-lg md:text-xl text-foreground max-w-xl text-center md:text-left">
-          {"Especialista em Dados apaixonado por transformar dados em decisões. Experiência com BI, analytics, integração e visualização. Foco em impacto e excelência."}
+          Analista de BI com +6 anos de experiência, especialista em transformar dados em decisões estratégicas.<br />
+          Formação em Ciência de Dados, com base técnica em Informática e Administração.<br />
+          Expertise em integração de dados, automações com VBA/SQL e criação de dashboards interativos no Power BI.<br />
+          Atualmente sou o Analista de BI mais seguido do Linkedin BR.
         </p>
         <div className="flex gap-3 items-center flex-wrap mt-3">
           {stack.map((tech) => (
