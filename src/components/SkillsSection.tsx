@@ -1,3 +1,4 @@
+
 import {
   Database,
   BarChart3,
@@ -27,7 +28,7 @@ const SKILLS_MAIN = [
       { name: "Python", icon: <FileCode2 className="text-lime-600" /> },
       { name: "DataViz", icon: <BarChart3 className="text-cyan-500" /> },
       { name: "Adobe Analytics", icon: <BarChart3 className="text-gray-700" /> },
-      { name: "PostgreSQL", icon: <Database className="text-indigo-600" /> },
+      // Removido o segundo PostgreSQL
     ],
   },
   {
