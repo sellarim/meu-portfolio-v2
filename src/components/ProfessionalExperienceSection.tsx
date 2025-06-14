@@ -114,7 +114,7 @@ const experiences = [
   },
   {
     company: "Comdata Group",
-    logo: "https://media.licdn.com/dms/image/C4D0BAQF8UIWKsdDd7Q/company-logo_200_200/0/1631363807777/comdata_group_logo?e=1722470400&v=beta&t=rP87nL-8YqM3wM_XtFm6czql-51PG9Ztvw-1sLRSbyE",
+    logo: "/lovable-uploads/1fbdcd0f-aace-4b31-b8bf-d6ee389a926f.png",
     location: "São Paulo, Brasil",
     roles: [
       {
