@@ -13,11 +13,12 @@ const projects = [
   },
   {
     title: "💰 MoneyMoney",
-    cover: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400",
+    // Novas propriedades para MoneyMoney
+    cover: "/lovable-uploads/841cb689-76f1-441f-893f-1a3371336b54.png",
     desc: "Painel financeiro pessoal com consolidação de gastos, metas e patrimônio.",
     tags: ["Power BI", "Excel"],
     github: "",
-    ext: "",
+    ext: "https://app.powerbi.com/view?r=eyJrIjoiZWI5NGJlYzMtOTNlYS00MGUwLTliNjgtM2U5ZGY1NGI0ZjM4IiwidCI6ImJlYWZkYjE2LTVlY2YtNGVmNC1hMjA2LWJlMTEyMDA0ZDU4YiJ9",
   },
   {
     title: "🎧 Monitoria – Call Center",
@@ -62,9 +63,12 @@ export default function ProjectsSection() {
       <h2 className="text-2xl md:text-3xl font-bold text-primary mb-8 text-center">💼 Portfólio de Projetos</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {projects.map((proj) => {
-          const isMidia = proj.title === "📺 Dashboard – Mídia";
-          // Para "Dashboard – Mídia", tornar a imagem e o título clicáveis (link para ext)
-          if (isMidia && proj.ext) {
+          // Se for MoneyMoney ou Dashboard – Mídia: imagem e título clicáveis, link em nova aba
+          const isClickableProj =
+            proj.title === "📺 Dashboard – Mídia" ||
+            proj.title === "💰 MoneyMoney";
+
+          if (isClickableProj && proj.ext) {
             return (
               <Card
                 key={proj.title}
@@ -76,7 +80,7 @@ export default function ProjectsSection() {
                   rel="noopener noreferrer"
                   className="block focus:outline-none focus:ring-2 focus:ring-primary/70 h-full"
                   tabIndex={0}
-                  title="Abrir Dashboard – Mídia"
+                  title={`Abrir ${proj.title}`}
                   style={{ textDecoration: "none" }}
                 >
                   <div>
@@ -106,7 +110,7 @@ export default function ProjectsSection() {
             );
           }
 
-          // Para os outros cards
+          // Cards padrão (não clicáveis)
           return (
             <Card
               key={proj.title}
