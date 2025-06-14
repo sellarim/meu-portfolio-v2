@@ -1,11 +1,13 @@
+
 import { useCallback } from "react";
-import { Github, Linkedin, Star, BarChart3, Database, Code, Sun, Moon } from "lucide-react";
+import { Github, Linkedin, Star, BarChart3, Database, Code, Layers, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
 const stack = [
   { name: "Power BI", icon: <BarChart3 className="text-yellow-500" /> },
+  { name: "Excel", icon: <Layers className="text-green-700" /> },
   { name: "SQL", icon: <Database className="text-blue-500" /> },
   { name: "Python", icon: <Code className="text-green-600" /> },
 ];
