@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 const experiences = [
   {
     company: "Digi",
-    logo: "/lovable-uploads/2cd4df9d-0fbb-497f-8250-5335892f5cb0.png",
+    logo: "lovable-uploads/2cd4df9d-0fbb-497f-8250-5335892f5cb0.png",
     location: "São Paulo, Brasil",
     roles: [
       {
@@ -32,7 +32,7 @@ const experiences = [
   },
   {
     company: "Campari Group",
-    logo: "/lovable-uploads/67f9333a-2a2b-41e9-ab4c-32ee1189c70d.png",
+    logo: "lovable-uploads/67f9333a-2a2b-41e9-ab4c-32ee1189c70d.png",
     location: "São Paulo, Brasil",
     roles: [
       {
@@ -50,7 +50,7 @@ const experiences = [
   },
   {
     company: "Club Yacht SP",
-    logo: "/lovable-uploads/86760fdc-5871-4238-a4d3-9dc1c1180771.png",
+    logo: "lovable-uploads/86760fdc-5871-4238-a4d3-9dc1c1180771.png",
     location: "São Paulo e Região, Brasil",
     roles: [
       {
@@ -69,7 +69,7 @@ const experiences = [
   },
   {
     company: "Samsung Brasil",
-    logo: "/lovable-uploads/d55c2d40-4531-4a55-9002-fe301cb33652.png",
+    logo: "lovable-uploads/d55c2d40-4531-4a55-9002-fe301cb33652.png",
     location: "São Paulo, Brasil",
     roles: [
       {
@@ -86,7 +86,7 @@ const experiences = [
   },
   {
     company: "Cheil Brasil",
-    logo: "/lovable-uploads/d3c6219d-d36c-457f-8ce1-e0470a6b6fd1.png",
+    logo: "lovable-uploads/d3c6219d-d36c-457f-8ce1-e0470a6b6fd1.png",
     location: "São Paulo, Brasil",
     roles: [
       {
@@ -114,7 +114,7 @@ const experiences = [
   },
   {
     company: "Comdata Group",
-    logo: "/lovable-uploads/1fbdcd0f-aace-4b31-b8bf-d6ee389a926f.png",
+    logo: "lovable-uploads/1fbdcd0f-aace-4b31-b8bf-d6ee389a926f.png",
     location: "São Paulo, Brasil",
     roles: [
       {
@@ -132,7 +132,7 @@ const experiences = [
   },
   {
     company: "Artes em PVC",
-    logo: "/lovable-uploads/976429c8-109c-4f3b-b9c6-53301df30462.png",
+    logo: "lovable-uploads/976429c8-109c-4f3b-b9c6-53301df30462.png",
     location: "Brasil",
     roles: [
       {
@@ -149,7 +149,7 @@ const experiences = [
   },
   {
     company: "Autônomo",
-    logo: "/lovable-uploads/57dac62d-461a-4cb3-a3bd-50feb1826176.png",
+    logo: "lovable-uploads/57dac62d-461a-4cb3-a3bd-50feb1826176.png",
     location: "Brasil",
     roles: [
       {
@@ -165,7 +165,7 @@ const experiences = [
   },
   {
     company: "Unitono Brasil",
-    logo: "/lovable-uploads/6ff84aff-ce19-4036-b289-f7b89f05d4b0.png",
+    logo: "lovable-uploads/6ff84aff-ce19-4036-b289-f7b89f05d4b0.png",
     location: "São Bernardo do Campo",
     roles: [
       {
@@ -182,7 +182,7 @@ const experiences = [
   },
   {
     company: "Prefeitura de São Paulo",
-    logo: "/lovable-uploads/7194f916-79b0-4f2b-9b60-5a67a3071905.png",
+    logo: "lovable-uploads/7194f916-79b0-4f2b-9b60-5a67a3071905.png",
     location: "São Paulo, SP",
     roles: [
       {
