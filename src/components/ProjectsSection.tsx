@@ -43,6 +43,14 @@ const projects = [
     github: "https://github.com/",
     ext: "",
   },
+  {
+    title: "Análise de Dados Google Analytics",
+    cover: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400",
+    desc: "Dashboards interativos utilizando dados coletados do Google Analytics para tomada de decisões estratégicas.",
+    tags: ["Google Analytics", "Dashboard"],
+    github: "https://github.com/",
+    ext: "https://datastudio.google.com/",
+  },
 ];
 
 export default function ProjectsSection() {
@@ -88,4 +96,3 @@ export default function ProjectsSection() {
     </section>
   );
 }
-
