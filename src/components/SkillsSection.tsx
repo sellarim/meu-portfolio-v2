@@ -1,4 +1,3 @@
-
 import {
   Database,
   BarChart3,
@@ -93,7 +92,7 @@ export default function SkillsSection() {
       {/* Barra horizontal de skills de Marketing & Métricas */}
       <div className="max-w-5xl mx-auto">
         <div className="bg-muted p-6 rounded-xl shadow flex flex-col gap-2">
-          <h3 className="text-lg font-semibold text-primary mb-2">{SKILL_MARKETING.category}</h3>
+          <h3 className="text-lg font-semibold text-primary mb-2 text-center">{SKILL_MARKETING.category}</h3>
           <ul className="flex flex-row flex-wrap gap-4 justify-between items-stretch w-full">
             {SKILL_MARKETING.items.map(({ name, icon }) => (
               <li
