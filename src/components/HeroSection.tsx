@@ -25,9 +25,13 @@ export default function HeroSection() {
 
   return (
     <header className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-12 px-6 md:px-16 py-16 relative">
-      {/* Foto estilo hero */}
+      {/* Foto estilo hero atualizada */}
       <div className="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-primary shadow-lg mb-4 md:mb-0 bg-muted flex-shrink-0">
-        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=facearea&w=400&h=400" alt="Foto de perfil" className="object-cover w-full h-full" />
+        <img
+          src="/lovable-uploads/eb71bb88-ae92-450a-b169-31a53dd57e34.png"
+          alt="Foto de perfil"
+          className="object-cover object-center w-full h-full"
+        />
       </div>
       {/* Textos da hero */}
       <div className="flex-1 flex flex-col gap-4 items-center md:items-start">
