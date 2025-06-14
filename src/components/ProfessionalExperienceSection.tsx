@@ -1,5 +1,8 @@
 
-import { Briefcase, Building2, MapPin, CalendarDays } from "lucide-react";
+import { useState } from "react";
+import { Briefcase, Building2, MapPin, CalendarDays, ChevronDown, ChevronUp } from "lucide-react";
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "./ui/collapsible";
+import { Button } from "./ui/button";
 
 const experiences = [
   {
@@ -198,6 +201,11 @@ const experiences = [
 ];
 
 export default function ProfessionalExperienceSection() {
+  const [open, setOpen] = useState(false);
+
+  const firstTwo = experiences.slice(0, 2);
+  const remaining = experiences.slice(2);
+
   return (
     <section
       id="professional-experiences"
@@ -207,7 +215,8 @@ export default function ProfessionalExperienceSection() {
         <Briefcase className="inline-block mr-2 mb-1" /> Experiências Profissionais
       </h2>
       <div className="flex flex-col gap-6 max-w-4xl mx-auto">
-        {experiences.map(({ company, logo, location, roles }) => (
+        {/* Primeiras duas experiências sempre visíveis */}
+        {firstTwo.map(({ company, logo, location, roles }) => (
           <div
             key={company}
             className="bg-muted rounded-xl shadow px-6 py-5 flex flex-col md:flex-row gap-6 animate-fade-in"
@@ -224,7 +233,7 @@ export default function ProfessionalExperienceSection() {
                   <MapPin className="w-4 h-4 mr-1" /> {location}
                 </span>
               </div>
-              {roles.map((role, idx) => (
+              {roles.map((role) => (
                 <div key={role.title + role.period} className="mb-2">
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2">
                     <span className="text-[.95rem] font-medium text-primary flex items-center">
@@ -246,6 +255,73 @@ export default function ProfessionalExperienceSection() {
             </div>
           </div>
         ))}
+
+        {/* O resto das experiências em um Collapsible */}
+        <Collapsible open={open} onOpenChange={setOpen}>
+          <CollapsibleContent>
+            <div className="flex flex-col gap-6">
+              {remaining.map(({ company, logo, location, roles }) => (
+                <div
+                  key={company}
+                  className="bg-muted rounded-xl shadow px-6 py-5 flex flex-col md:flex-row gap-6 animate-fade-in"
+                >
+                  <img
+                    src={logo}
+                    alt={company}
+                    className="w-16 h-16 object-contain rounded-md bg-white border p-1 self-center md:self-start"
+                  />
+                  <div className="flex-1">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-1">
+                      <span className="font-bold text-base">{company}</span>
+                      <span className="flex items-center text-xs text-muted-foreground ml-0 sm:ml-3">
+                        <MapPin className="w-4 h-4 mr-1" /> {location}
+                      </span>
+                    </div>
+                    {roles.map((role) => (
+                      <div key={role.title + role.period} className="mb-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                          <span className="text-[.95rem] font-medium text-primary flex items-center">
+                            <Building2 className="w-4 h-4 mr-1" /> {role.title}
+                          </span>
+                          <span className="text-xs ml-0 sm:ml-3 text-muted-foreground flex items-center">
+                            <CalendarDays className="w-4 h-4 mr-1" /> {role.period}
+                          </span>
+                        </div>
+                        {role.activities.length > 0 && (
+                          <ul className="list-disc pl-5 mt-1 text-[.95rem] text-foreground space-y-1">
+                            {role.activities.map((a) => (
+                              <li key={a}>{a}</li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CollapsibleContent>
+          {/* Botão para expandir/ocultar */}
+          {remaining.length > 0 && (
+            <CollapsibleTrigger asChild>
+              <Button
+                variant="outline"
+                className="mx-auto mt-4 flex items-center gap-2"
+                aria-expanded={open}
+              >
+                {open ? (
+                  <>
+                    Ver menos <ChevronUp className="w-4 h-4" />
+                  </>
+                ) : (
+                  <>
+                    Ver mais <ChevronDown className="w-4 h-4" />
+                  </>
+                )}
+              </Button>
+            </CollapsibleTrigger>
+          )}
+        </Collapsible>
       </div>
     </section>
   );
